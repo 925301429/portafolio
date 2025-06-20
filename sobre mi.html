@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre Mi</title>
+  <link rel="stylesheet" href="">
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .container {
+      border: 2px solid #444;
+      border-radius: 20px;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .skills-section {
+      display: flex;
+      gap: 40px;
+    }
+
+    .box {
+      border: 2px solid #444;
+      border-radius: 20px;
+      padding: 20px;
+      width: 45%;
+    }
+
+    .box h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .tech-list {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .skill-bar {
+      margin-bottom: 15px;
+    }
+
+    .skill-bar label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .progress {
+      background-color: #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 20px;
+    }
+
+    .progress div {
+      background-color: #444;
+      height: 100%;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sobre Mi</h1>
+    <p>
+      Soy estudiante de APSTI IV y me gusta la edición de videos, cableado estructurado de redes,
+      reparación de equipos de cómputo. Me gusta la automatización IoT con Arduino y Raspberry Pi.
+    </p>
+
+    <div class="skills-section">
+      <div class="box">
+        <h3>Habilidades Técnicas</h3>
+        <ul class="tech-list">
+          <li>diseño (corel draw)</li>
+          <li>Base de datos (mysql, postgresql)</li>
+          <li>Control de versiones (git)</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Soft Skill</h3>
+        <div class="skill-bar">
+          <label>HTML</label>
+          <div class="progress">
+            <div style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <label>CSS</label>
+          <div class="progress">
+            <div style="width: 75%;"></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <label>Python</label>
+          <div class="progress">
+            <div style="width: 90%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

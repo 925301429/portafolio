@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .contacto-container {
+      border: 2px solid #444;
+      border-radius: 20px;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .redes {
+      width: 45%;
+    }
+
+    .redes h3 {
+      margin-bottom: 15px;
+    }
+
+    .red-option {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .red-option input[type="radio"] {
+      margin-right: 10px;
+      width: 18px;
+      height: 18px;
+    }
+
+    .red-option.linkedin label {
+      color: red;
+    }
+
+    .formulario {
+      width: 45%;
+    }
+
+    .formulario label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .formulario input[type="text"],
+    .formulario input[type="email"] {
+      width: 100%;
+      padding: 5px;
+      border-radius: 8px;
+      border: 2px solid #333;
+      margin-top: 5px;
+    }
+
+    .formulario button {
+      margin-top: 15px;
+      padding: 8px 20px;
+      font-size: 16px;
+      border: 2px solid #333;
+      border-radius: 10px;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    .footer {
+      text-align: center;
+      border: 2px solid #444;
+      border-radius: 15px;
+      margin-top: 30px;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .contacto-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .redes, .formulario {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contacto-container">
+    <div class="redes">
+      <h3>Contacto</h3>
+      <div class="red-option">
+        <input type="radio" name="contacto" id="whatsapp">
+        <label for="whatsapp">whatsapp</label>
+      </div>
+      <div class="red-option">
+        <input type="radio" name="contacto" id="facebook">
+        <label for="facebook">facebook</label>
+      </div>
+      <div class="red-option">
+        <input type="radio" name="contacto" id="tiktok">
+        <label for="tiktok">tiktok</label>
+      </div>
+      <div class="red-option linkedin">
+        <input type="radio" name="contacto" id="linkedin">
+        <label for="linkedin">linkedin</label>
+      </div>
+    </div>
+
+    <div class="formulario">
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="celular">Celular:</label>
+        <input type="text" id="celular" name="celular">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+   2025 MARIANA ZEVALLOS
+  </div>
+
+</body>
+</html>
